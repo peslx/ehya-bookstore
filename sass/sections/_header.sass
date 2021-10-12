@@ -1,7 +1,14 @@
 .navbar
   padding: 25px 0
-  // background-color: lightgreen
+  width: 100%
+  background-color: $bgc
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 100
+
   &-wrap
+    width: 100%
     display: flex
     justify-content: space-between
     align-items: center
@@ -26,3 +33,17 @@
     &__button
       margin-left: 40px
       max-width: 148px
+  &-button
+    position: absolute
+    padding: 0
+    display: none
+    visibility: hidden
+    right: 20px
+    width: 24px
+    height: 24px
+    border: none
+    background: transparent
+    cursor: pointer
+    &__img
+      width: 100%
+      height: 100%
