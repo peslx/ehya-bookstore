@@ -16,11 +16,18 @@ body
   line-height: 22px
 
 .container
-  max-width: 1110px
+  max-width: 1140px
   margin: auto
   position: relative
 
+.logo
+  &__img
+    width: 90px
+    height: 28px
+
+
 .section-title
+  margin: -2px 0
   font-family: 'Roboto Condensed', sans-serif
   font-style: normal
   font-weight: 700
@@ -28,11 +35,11 @@ body
   line-height: 60px
   letter-spacing: 0.2px
   color: $header-text
-
-.section-title--accent
-  color: $accent-text
+  &--accent
+    color: $accent-text
 
 .section-subtitle
+  margin: 0
   font-family: 'Roboto Condensed', sans-serif
   font-style: normal
   font-weight: 700
@@ -42,6 +49,7 @@ body
   color: $header-text
 
 .section-heading
+  margin: 0
   font-family: 'Roboto', sans-serif
   font-style: normal
   font-weight: 500
@@ -49,3 +57,20 @@ body
   line-height: 24px
   letter-spacing: 0.2px
   text-transform: uppercase
+
+.button
+  padding: 11px 30px
+  font-family: 'Open Sans', sans-serif
+  font-style: normal
+  font-weight: bold
+  font-size: 16px
+  line-height: 22px
+  text-align: center
+  color: $bgc
+  background-color: $accent
+  border: 2px solid $accent
+  border-radius: 8px
+  cursor: pointer
+  &--void
+    color: $accent
+    background-color: transparent

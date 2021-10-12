@@ -353,12 +353,18 @@ body {
 }
 
 .container {
-  max-width: 1110px;
+  max-width: 1140px;
   margin: auto;
   position: relative;
 }
 
+.logo__img {
+  width: 90px;
+  height: 28px;
+}
+
 .section-title {
+  margin: -2px 0;
   font-family: 'Roboto Condensed', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -373,6 +379,7 @@ body {
 }
 
 .section-subtitle {
+  margin: 0;
   font-family: 'Roboto Condensed', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -383,6 +390,7 @@ body {
 }
 
 .section-heading {
+  margin: 0;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -390,4 +398,115 @@ body {
   line-height: 24px;
   letter-spacing: 0.2px;
   text-transform: uppercase;
+}
+
+.button {
+  padding: 11px 30px;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #1565D8;
+  border: 2px solid #1565D8;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.button--void {
+  color: #1565D8;
+  background-color: transparent;
+}
+
+.navbar {
+  padding: 25px 0;
+}
+
+.navbar-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-menu__links {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-menu__item {
+  margin-right: 20px;
+}
+
+.navbar-menu__link {
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #183B56;
+}
+
+.navbar-menu__button {
+  margin-left: 40px;
+  max-width: 148px;
+}
+
+.main {
+  padding: 70px 0 100px 0;
+}
+
+.main-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-about__header {
+  margin-top: 48px;
+  margin-bottom: 28px;
+  max-width: 470px;
+}
+
+.main-about__author {
+  margin-bottom: 36px;
+}
+
+.main-about__text {
+  max-width: 585px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  margin-bottom: 56px;
+}
+
+.main-button {
+  min-width: 215px;
+  max-width: 215px;
+  padding: 16px 36px;
+  text-transform: uppercase;
+}
+
+.main-button:last-child {
+  margin-left: 26px;
+}
+
+.main-book {
+  padding: 103px 119px;
+  background-color: #B3BAC510;
+}
+
+.main-book__img {
+  width: 250px;
+  height: 374px;
+  object-fit: cover;
 }
