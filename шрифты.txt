@@ -1,0 +1,5 @@
+Open Sans 		regular
+Open Sans 		semibold
+Open Sans 		bold
+Roboto 			medium
+Roboto Condensed		bold
