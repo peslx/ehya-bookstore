@@ -1,11 +1,10 @@
 @media screen and ( max-width: 1200px )
   .container
-    max-width: 1050px
     padding: 0 20px
 
 @media screen and ( max-width: 992px )
   .container
-    max-width: 100vw
+    width: 100%
     position: relative
     overflow-x: hidden
   .section-title
@@ -41,18 +40,23 @@
         box-shadow: 0 10px 20px grey
 
 @media screen and ( max-width: 768px )
+
   .section-heading
     margin-bottom: 32px
   .navbar
-    width: 100vw
+    width: 100%
     padding: 18px 0
     position: fixed
-    &-menu
-      display: none
-      visibility: hidden
     &-button
       display: block
       visibility: visible
+  .menu
+    display: none
+    visibility: hidden
+    &--mobile
+      &--visible
+        display: flex
+        visibility: visible
   .main
     padding: 95px 0 56px 0
     &-wrap
@@ -128,7 +132,27 @@
       &__cover
         min-width: 144px
         min-height: 214px
+  .modal
+    &__form
+      &__bottom
+        margin-top: 10px
+        display: flex
+        flex-direction: column-reverse
+    &__required
+      margin-bottom: 20px
+      align-self: flex-start
+    &__button
+      width: 100%
 
 
-
-// @media screen and ( max-height: 540px )
+@media screen and ( max-height: 540px )
+  .modal
+    &__wrapper
+    &__window
+      height: 100vh
+      overflow-y: auto
+    &__form
+      &__bottom
+        display: flex
+        flex-direction: column-reverse
+        justify-content: space-between

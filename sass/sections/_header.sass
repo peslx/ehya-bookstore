@@ -12,27 +12,6 @@
     display: flex
     justify-content: space-between
     align-items: center
-  &-menu
-    display: flex
-    justify-content: space-between
-    align-items: center
-    &__links
-      display: flex
-      align-items: center
-    &__item
-      margin-right: 20px
-    &__link
-      text-decoration: none
-      font-family: 'Open Sans', sans-serif
-      font-style: normal
-      font-weight: 600
-      font-size: 16px
-      line-height: 22px
-      text-align: center
-      color: $header-text
-    &__button
-      margin-left: 40px
-      max-width: 148px
   &-button
     position: absolute
     padding: 0
@@ -44,6 +23,62 @@
     border: none
     background: transparent
     cursor: pointer
-    &__img
+    &__bg
       width: 100%
       height: 100%
+      background-image: url(/img/menu_open.png)
+      background-repeat: no-repeat
+      background-size: cover
+      &--active
+        background-image: url(/img/menu_close.png)
+
+.menu
+  display: flex
+  justify-content: space-between
+  align-items: center
+  &--mobile
+    background-color: $bgc
+    position: fixed
+    top: 85px
+    width: 95%
+    left: 50%
+    transform: translateX(-50%)
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 32px 0
+    border-radius: 8px
+    border: 1px solid $accent
+    display: none
+    visibility: hidden
+    &--visible
+      display: flex
+      visibility: visible
+   
+  &__links
+    display: flex
+    align-items: center
+    &--mobile
+      display: flex
+      flex-direction: column
+      align-items: center
+  &__item
+    margin-right: 20px
+    &--mobile
+      margin-right: 0
+      margin-bottom: 14px
+  &__link
+    text-decoration: none
+    font-family: 'Open Sans', sans-serif
+    font-style: normal
+    font-weight: 600
+    font-size: 16px
+    line-height: 22px
+    text-align: center
+    color: $header-text
+  &__button
+    margin-left: 40px
+    max-width: 148px
+    padding: 11px 30px
+    &--mobile
+      margin-left: 0

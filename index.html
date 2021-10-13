@@ -34,29 +34,24 @@
             />
           </a>
           <!-- /.logo -->
-          <div class="navbar-menu">
-            <nav class="navbar-menu__links">
-              <div class="navbar-menu__item">
-                <a href="#" class="navbar-menu__link">Рекомендации</a>
+          <div class="menu">
+            <nav class="menu__links">
+              <div class="menu__item">
+                <a href="#" class="menu__link">Рекомендации</a>
               </div>
-              <div class="navbar-menu__item">
-                <a href="#" class="navbar-menu__link">Книги</a>
+              <div class="menu__item">
+                <a href="#" class="menu__link">Книги</a>
               </div>
-              <div class="navbar-menu__item">
-                <a href="#" class="navbar-menu__link">Блог</a>
+              <div class="menu__item">
+                <a href="#" class="menu__link">Блог</a>
               </div>
             </nav>
-            <button class="button button--void navbar-menu__button">
-              Получить
-            </button>
+            <button class="button button--void menu__button">Получить</button>
           </div>
-          <!-- /.navbar-menu -->
+          <!-- /.menu -->
+
           <button class="navbar-button">
-            <img
-              src="img/menu_open.png"
-              alt="Icon: mobile menu"
-              class="navbar-button__img"
-            />
+            <div class="navbar-button__bg"></div>
           </button>
         </div>
         <!-- /.navbar-wrap -->
@@ -167,5 +162,75 @@
       </div>
     </footer>
     <!-- /.footer -->
+
+    <div class="container container--mobile">
+      <div class="menu menu--mobile">
+        <nav class="menu__links menu__links--mobile">
+          <div class="menu__item menu__item--mobile">
+            <a href="#" class="menu__link">Рекомендации</a>
+          </div>
+          <div class="menu__item menu__item--mobile">
+            <a href="#" class="menu__link">Книги</a>
+          </div>
+          <div class="menu__item menu__item--mobile">
+            <a href="#" class="menu__link">Блог</a>
+          </div>
+        </nav>
+        <button class="button button--void menu__button menu__button--mobile">
+          Получить
+        </button>
+      </div>
+    </div>
+    <!-- /.container -->
+
+    <div class="modal">
+      <div class="modal__wrapper"></div>
+      <!-- /.modal__wrapper -->
+      <div class="modal__window">
+        <button class="modal__close">
+          <img src="img/modal_close.svg" alt="Icon: close" />
+        </button>
+        <div class="modal__contact-form form">
+          <h3 class="modal__title">Оформить заказ</h3>
+          <form action="#" method="POST" class="modal__form">
+            <input
+              type="text"
+              class="input modal__input"
+              placeholder="*Ваше имя"
+              name="name"
+              minlength="2"
+              required
+            />
+            <input
+              type="tel"
+              class="input modal__input phone"
+              placeholder="*Номер телефона"
+              name="phone"
+              required
+            />
+            <input
+              type="email"
+              class="input modal__input"
+              placeholder="*Ваш Email"
+              name="email"
+              required
+            />
+
+            <div class="modal__form__bottom">
+              <button class="modal__button form__button" type="submit">
+                Отправить
+              </button>
+              <span class="modal__required form__required"
+                >*Обязательные поля</span
+              >
+            </div>
+            <!-- /.modal__form__bottom -->
+          </form>
+        </div>
+        <!-- /.modal__contact-form -->
+      </div>
+      <!-- /.modal__window -->
+    </div>
+    <!-- /.modal -->
   </body>
 </html>

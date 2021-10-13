@@ -1,0 +1,86 @@
+.modal
+  display: none
+  visibility: hidden
+  display: block
+  visibility: visible
+
+  &__wrapper
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background-color: $overlay
+    z-index: 125
+    // display: none
+    // visibility: hidden
+  &__window
+    position: fixed
+    z-index: 130
+    padding: 50px
+    min-width: 316px
+    max-width: 426px
+    width: 100%
+    top: 50%
+    left: 50%
+    border: 2px solid $accent
+    border-radius: 8px
+    transform: translate(-50%, -50%)
+    background-color: $dark
+    color: $bgc
+    // display: none
+    // visibility: hidden
+
+  // &__wrapper, &__window
+  //   &--visible
+  //     display: block
+  //     visibility: visible
+
+  &__close
+    position: absolute
+    top: 20px
+    right: 20px
+    background-color: transparent
+    border: none
+    text-decoration: none
+    cursor: pointer
+  &__input
+    width: 100%
+    margin-top: 15px
+    border-radius: 8px
+    color: $dark
+    &:-webkit-autofill
+      -webkit-text-fill-color: $dark
+
+  &__title
+    padding: 0
+    margin: 0 0 21px 0
+    font-family: 'Roboto', sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 20px
+    line-height: 24px
+    letter-spacing: 0.2px
+    text-transform: uppercase
+    text-align: center
+  &__form
+    &__bottom
+      display: flex
+      justify-content: space-between
+      align-items: center
+      margin-top: 21px
+  &__button
+    padding: 13px 18px
+    background-color: $accent-text
+    color: $bgc
+    font-family: 'Open Sans', sans-serif
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 22px
+    border: none
+    border-radius: 4px
+    cursor: pointer
+  &__required
+    font-size: 12px
+    line-height: 25px
