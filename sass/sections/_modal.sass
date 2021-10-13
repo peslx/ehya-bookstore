@@ -1,8 +1,9 @@
 .modal
   display: none
   visibility: hidden
-  display: block
-  visibility: visible
+  &--active
+    display: block
+    visibility: visible
 
   &__wrapper
     position: fixed
@@ -12,8 +13,7 @@
     bottom: 0
     background-color: $overlay
     z-index: 125
-    // display: none
-    // visibility: hidden
+
   &__window
     position: fixed
     z-index: 130
@@ -21,20 +21,13 @@
     min-width: 316px
     max-width: 426px
     width: 100%
-    top: 50%
+    top: 35%
     left: 50%
     border: 2px solid $accent
     border-radius: 8px
     transform: translate(-50%, -50%)
     background-color: $dark
     color: $bgc
-    // display: none
-    // visibility: hidden
-
-  // &__wrapper, &__window
-  //   &--visible
-  //     display: block
-  //     visibility: visible
 
   &__close
     position: absolute
