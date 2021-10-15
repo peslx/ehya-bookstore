@@ -386,13 +386,13 @@ body {
 }
 
 .section-title {
-  margin: -2px 0;
+  margin: 0px 0;
   font-family: 'Roboto Condensed', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
   line-height: 60px;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.5px;
   color: #183B56;
 }
 
@@ -407,7 +407,7 @@ body {
   font-weight: 700;
   font-size: 32px;
   line-height: 40px;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.5px;
   color: #183B56;
 }
 
@@ -418,7 +418,7 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.5px;
   text-transform: uppercase;
 }
 
@@ -435,6 +435,7 @@ body {
   border: 2px solid #1565D8;
   border-radius: 8px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .button--void {
@@ -455,7 +456,7 @@ body {
 }
 
 .navbar {
-  padding: 25px 0;
+  padding: 36px 0;
   width: 100%;
   background-color: #ffffff;
   position: fixed;
@@ -482,16 +483,13 @@ body {
   border: none;
   background: transparent;
   cursor: pointer;
-}
-
-.navbar-button__bg {
-  background-image: url(/img/menu_open.png);
+  background-image: url("../img/menu_open.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.navbar-button__bg--active {
-  background-image: url(/img/menu_close.png);
+.navbar-button--active {
+  background-image: url("../img/menu_close.png");
 }
 
 .menu {
@@ -535,7 +533,7 @@ body {
 }
 
 .menu__item {
-  margin-right: 20px;
+  margin-right: 25px;
 }
 
 .menu__item--mobile {
@@ -565,7 +563,7 @@ body {
 }
 
 .main {
-  padding: 167px 0 100px 0;
+  padding: 178px 0 100px 0;
 }
 
 .main-wrap {
@@ -588,12 +586,13 @@ body {
 }
 
 .main-about__text {
-  max-width: 585px;
+  max-width: 600px;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 32px;
   margin-bottom: 56px;
+  letter-spacing: -0.5px;
 }
 
 .main-about__buttons {
@@ -623,7 +622,7 @@ body {
 .main-book__cover {
   display: flex;
   width: 250px;
-  box-shadow: 0 10px 40px grey;
+  box-shadow: 0 10px 20px grey;
 }
 
 .main-book__img {
@@ -765,10 +764,6 @@ body {
     min-width: 176px;
     width: auto;
   }
-  .main-book__cover {
-    width: auto;
-    box-shadow: 0 10px 20px grey;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -827,10 +822,6 @@ body {
   .main-book {
     padding: 60px 68px;
     width: 500px;
-  }
-  .main-book__cover {
-    width: auto;
-    box-shadow: 0 10px 30px grey;
   }
 }
 
@@ -910,3 +901,4 @@ body {
     justify-content: space-between;
   }
 }
+/*# sourceMappingURL=style.css.map */

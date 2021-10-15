@@ -1,6 +1,6 @@
 $(document).ready(function () {
   $(".navbar-button").click(function () {
-    $(".navbar-button__bg").toggleClass("navbar-button__bg--active");
+    $(".navbar-button").toggleClass("navbar-button--active");
     $(".container--mobile").toggleClass("container--mobile--visible");
     $(".menu--mobile").toggleClass("menu--mobile--visible");
   });
@@ -24,7 +24,7 @@ $(document).ready(function () {
   });
 
   function closeMobile() {
-    $(".navbar-button__bg").removeClass("navbar-button__bg--active");
+    $(".navbar-button").removeClass("navbar-button--active");
     $(".container--mobile").removeClass("container--mobile--visible");
     $(".menu--mobile").removeClass("menu--mobile--visible");
   }

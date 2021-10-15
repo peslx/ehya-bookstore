@@ -1,5 +1,5 @@
 .navbar
-  padding: 25px 0
+  padding: 36px 0
   width: 100%
   background-color: $bgc
   position: fixed
@@ -23,12 +23,11 @@
     border: none
     background: transparent
     cursor: pointer
-    &__bg
-      background-image: url(/img/menu_open.png)
-      background-repeat: no-repeat
-      background-size: cover
-      &--active
-        background-image: url(/img/menu_close.png)
+    background-image: url('../img/menu_open.png')
+    background-repeat: no-repeat
+    background-size: cover
+    &--active
+      background-image: url('../img/menu_close.png')
 
 .menu
   display: flex
@@ -62,7 +61,7 @@
       flex-direction: column
       align-items: center
   &__item
-    margin-right: 20px
+    margin-right: 25px
     &--mobile
       margin-right: 0
       margin-bottom: 14px
