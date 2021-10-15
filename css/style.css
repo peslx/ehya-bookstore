@@ -660,6 +660,10 @@ body {
   object-fit: cover;
 }
 
+.references {
+  padding-bottom: 79px;
+}
+
 .modal {
   display: none;
   visibility: hidden;
