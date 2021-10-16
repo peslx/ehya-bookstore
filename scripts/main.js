@@ -36,4 +36,11 @@ $(document).ready(function () {
   function closeModal() {
     $(".modal").removeClass("modal--active");
   }
+
+  console.log($(".compilation-card__like"));
+  $(".compilation-card__like").click(function () {
+    $(this).toggleClass("compilation-card__like--clicked");
+  });
 });
+
+// ("compilation-card__like--clicked");

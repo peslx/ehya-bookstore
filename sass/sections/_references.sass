@@ -1,4 +1,5 @@
 .references
+  padding-top: 10px
   padding-bottom: 79px
   &-container
     display: flex
@@ -17,6 +18,29 @@
     border: none
     border-radius: 25px
     cursor: pointer
+    transition: box-shadow .3s ease-in-out, transform .3s ease-in-out
+    &:hover
+      box-shadow: 0 4px 8px #00000030, 0 3px 6px #00000030
+      transform: translateY(-2px)
+  &__link
+    position: relative
+    text-decoration: none
+    color: $accent
+    &::after
+        content: ''
+        position: absolute
+        left: 0
+        top: 0
+        width: 0
+        height: 100%
+        border-bottom: 2px solid $accent
+        transition: all .2s ease
+    &:hover
+      color: $accent
+      transform-origin: center
+      &::after
+        width: 100%
+      
 
 .labels
   &__title
@@ -25,7 +49,6 @@
     font-weight: 500
     font-size: 22px
     line-height: 32px
-    letter-spacing: 0.2px
     color: $dark
   &__genre
     font-family: 'Open Sans', sans-serif
@@ -53,8 +76,8 @@
       display: grid
       grid-template-columns: repeat(2 minmax(min-content, 1fr))
       grid-auto-rows: min-content
-      grid-row-gap: 32px
-      grid-column-gap: 32px
+      grid-row-gap: 35px
+      grid-column-gap: 35px
       // margin-bottom: 27px
   &__container
     margin-top: 30px
@@ -69,10 +92,9 @@
     border-radius: 8px
     &:nth-child(2n)
       grid-column: 2
-      
     &__img
-      max-width: 160px
-      max-height: 238px
+      min-width: 160px
+      height: 238px
       object-fit: cover
       border-radius: 8px
     &__info
@@ -81,6 +103,7 @@
       margin-left: 17px
       justify-content: space-between  
     &__labels
+      padding-top: 10px
       display: flex
       flex-direction: column
     &__title
@@ -89,13 +112,29 @@
       margin-bottom: 24px
     &__price
     &__buttons
-      margin-bottom: 15px
+      margin-bottom: 10px
       display: flex
       align-items: center
     &__button
       margin-right: 20px
     &__like
+      border: none
+      margin-top: 5px
+      width: 20px
+      height: 22px
       cursor: pointer
+      background: transparent
+      background-image: url('../img/like.svg')
+      background-repeat: no-repeat
+      background-size: 100%
+      &:hover
+        background-image: url('../img/like_hov.svg')
+        background-repeat: no-repeat
+        background-size: 100%
+      &--clicked
+        background-image: url('../img/liked.svg')
+        &:hover
+          background-image: url('../img/liked.svg')
   &__else
     margin-top: 27px
     padding: 25px
@@ -128,7 +167,7 @@
       display: grid
       grid-template-columns: minmax(min-content, 1fr)
       grid-template-rows: repeat(4, min-content) fit-content
-      grid-row-gap: 32px
+      grid-row-gap: 35px
   &__container
     margin-top: 30px
 
