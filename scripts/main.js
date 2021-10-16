@@ -56,9 +56,16 @@ $(document).ready(function () {
     $(this).toggleClass("compilation-card__like--clicked");
   });
 
-  // $(document).click((e) => {
-  //   console.log(e.target);
-  // });
-});
+  // Активация слайдера в секции "Категории"
+  const swiper = new Swiper(".swiper", {
+    // Optional parameters
+    direction: "horizontal",
+    loop: false,
 
-// ("compilation-card__like--clicked");
+    // Navigation arrows
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+});

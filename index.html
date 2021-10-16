@@ -17,8 +17,10 @@
     />
     <!-- Стили -->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <!-- Скрипты -->
     <script src="https://code.jquery.com/jquery-1.11.3.min.js" defer></script>
+    <script src="scripts/swiper-bundle.min.js" defer></script>
     <script src="scripts/main.js" defer></script>
     <!-- ### -->
   </head>
@@ -473,14 +475,51 @@
 
     <section class="categories">
       <div class="container">
-        <h3 class="section-heading">В разработке</h3>
+        <div class="categories-wrap">
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">Slide 1</div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+              <div class="swiper-slide">Slide 4</div>
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <!-- /.swiper -->
+        </div>
+        <!-- /.categories-wrap -->
       </div>
       <!-- /.container -->
     </section>
     <!-- /.categories -->
-    <section class="unreleased">
+    <section class="unreleased" hidden>
       <div class="container">
-        <h3 class="section-heading">В разработке</h3>
+        <div class="unreleased-wrap">
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">Slide 1</div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+              <div class="swiper-slide">Slide 4</div>
+              <div class="swiper-slide">Slide 5</div>
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <!-- /.swiper -->
+        </div>
+        <!-- /.unreleased-wrap -->
       </div>
       <!-- /.container -->
     </section>
