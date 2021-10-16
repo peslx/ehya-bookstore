@@ -1,17 +1,16 @@
 .categories
-  background: Turquoise
+  // background: Turquoise
   &-wrap
     padding: 60px 0 100px 0
-    background: SpringGreen
     border-top: 1px solid #d8d8d8
-    border-top: 1px solid red
+    // border-top: 1px solid red
+    // background: SpringGreen
   &-slider
-    background: HotPink
+    // background: HotPink
     &__wrapper
-      background: tomato
       display: flex
       align-items: center
-      // justify-content: space-between
+      // background: tomato
   &-slide
     max-width: 265px
     max-height: 240px
@@ -21,8 +20,6 @@
     justify-content: flex-start
     border: 2px solid $light-transp
     border-radius: 8px
-    // margin-left: 13px
-    // margin-right: 13px
     &__img
       width: 64px
       height: 64px
@@ -52,5 +49,26 @@
       line-height: 22px
       text-align: center
   &-button
+    width: 56px
+    height: 56px
+    border-radius: 50%
+    border: none
+    box-shadow: 0 4px 14px $overlay
+    cursor: pointer
+    background-color: $bgc
+    position: absolute
+    top: 152px
+    z-index: 100
+    background-repeat: no-repeat
+    background-size: 18px
+    background-position: center
     &--prev
+      background-image: url('../img/genres/arr_prev.svg')
+      transform: translateX(-50%)
     &--next
+      right: 0
+      background-image: url('../img/genres/arr_next.svg')
+      transform: translateX(50%)
+      margin-right: 10px
+    &--disabled
+      opacity: .5

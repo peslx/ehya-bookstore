@@ -57,7 +57,7 @@ $(document).ready(function () {
   });
 
   // Активация слайдера в секции "Категории"
-  const swiper = new Swiper(".swiper", {
+  const categories = new Swiper(".categories-slider", {
     // Optional parameters
     direction: "horizontal",
     loop: false,
@@ -68,6 +68,8 @@ $(document).ready(function () {
     navigation: {
       nextEl: ".categories-button--next",
       prevEl: ".categories-button--prev",
+      disabledClass: "categories-button--disabled",
     },
   });
+  categories.navigation.prevEl.toggleClass("categories-button--disabled");
 });
