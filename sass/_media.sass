@@ -30,8 +30,23 @@
       max-height: 58px
       min-width: 176px
       width: auto
+  .references
+    &-container
+      justify-content: space-around
+    &__title
+      text-align: center
+  .compilation
+    &-wrap
+      &__grid
+        grid-template-columns: 1fr
+        
+    &-card
+      grid-column: 1
+      &:nth-child(2n)
+        grid-column: 1
+      &:nth-child(n+4)
+        display: none
 
-    &-book
 
 
 @media screen and ( max-width: 768px )
@@ -80,6 +95,35 @@
     &-book
       padding: 60px 68px
       width: 500px
+  .references
+    &-container
+      flex-direction: column
+
+
+        
+  .compilation
+    &-wrap
+      &__grid
+        grid-template-columns: repeat(2 minmax(min-content, 1fr))
+    &-card
+      &:nth-child(2n)
+        grid-column: 2
+      &:nth-child(4)
+        display: flex
+      &:nth-child(n+5)
+        display: none
+  .bestsellers
+    padding-top: 50px
+    &-wrap
+      max-width: none
+      width: auto
+      &__grid
+        grid-template-columns: 1fr 1fr
+        grid-column-gap: 10px
+    &-card
+      &:nth-child(2n)
+        grid-column: 2
+
 
 
 @media screen and ( max-width: 576px )

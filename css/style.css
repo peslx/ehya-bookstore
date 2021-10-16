@@ -438,7 +438,7 @@ body {
   text-decoration: none;
   transition: .3s ease;
   position: relative;
-  z-index: 100;
+  z-index: 50;
 }
 
 .button:hover {
@@ -748,7 +748,6 @@ body {
 
 .compilation-wrap {
   max-width: 751px;
-  width: 751px;
   display: flex;
   flex-direction: column;
 }
@@ -782,7 +781,7 @@ body {
 
 .compilation-card__img {
   min-width: 160px;
-  height: 238px;
+  height: 232px;
   object-fit: cover;
   border-radius: 8px;
 }
@@ -1065,6 +1064,24 @@ body {
     min-width: 176px;
     width: auto;
   }
+  .references-container {
+    justify-content: space-around;
+  }
+  .references__title {
+    text-align: center;
+  }
+  .compilation-wrap__grid {
+    grid-template-columns: 1fr;
+  }
+  .compilation-card {
+    grid-column: 1;
+  }
+  .compilation-card:nth-child(2n) {
+    grid-column: 1;
+  }
+  .compilation-card:nth-child(n+4) {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1123,6 +1140,35 @@ body {
   .main-book {
     padding: 60px 68px;
     width: 500px;
+  }
+  .references-container {
+    flex-direction: column;
+  }
+  .compilation-wrap__grid {
+    grid-template-columns: repeat(2 minmax(min-content, 1fr));
+  }
+  .compilation-card:nth-child(2n) {
+    grid-column: 2;
+  }
+  .compilation-card:nth-child(4) {
+    display: flex;
+  }
+  .compilation-card:nth-child(n+5) {
+    display: none;
+  }
+  .bestsellers {
+    padding-top: 50px;
+  }
+  .bestsellers-wrap {
+    max-width: none;
+    width: auto;
+  }
+  .bestsellers-wrap__grid {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+  }
+  .bestsellers-card:nth-child(2n) {
+    grid-column: 2;
   }
 }
 
