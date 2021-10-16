@@ -1030,6 +1030,9 @@ body {
   .container {
     padding: 0 20px;
   }
+  .compilation-card__title {
+    line-height: 22px;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -1065,7 +1068,7 @@ body {
     width: auto;
   }
   .references-container {
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
   .references__title {
     text-align: center;
@@ -1145,16 +1148,42 @@ body {
     flex-direction: column;
   }
   .compilation-wrap__grid {
-    grid-template-columns: repeat(2 minmax(min-content, 1fr));
-  }
-  .compilation-card:nth-child(2n) {
-    grid-column: 2;
-  }
-  .compilation-card:nth-child(4) {
     display: flex;
+    height: auto;
+    max-height: none;
+    padding-top: 60px;
+    justify-content: center;
   }
-  .compilation-card:nth-child(n+5) {
+  .compilation-card {
+    padding-top: 0;
+    max-width: 100%;
+    max-height: none;
+    flex-direction: column;
+    align-items: center;
+  }
+  .compilation-card:nth-child(n+2) {
     display: none;
+  }
+  .compilation-card__info {
+    margin-left: 0;
+    width: 70%;
+    align-items: center;
+  }
+  .compilation-card__img {
+    margin: 0;
+    margin-top: -44px;
+    margin-bottom: 20px;
+    min-width: 96px;
+    width: 35%;
+    height: auto;
+  }
+  .compilation-card__labels {
+    width: 100%;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+  .compilation-card__title {
+    text-align: center;
   }
   .bestsellers {
     padding-top: 50px;
@@ -1164,11 +1193,17 @@ body {
     width: auto;
   }
   .bestsellers-wrap__grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-column-gap: 10px;
   }
-  .bestsellers-card:nth-child(2n) {
-    grid-column: 2;
+  .bestsellers-card {
+    justify-content: center;
+    min-width: 290px;
+    width: 100%;
+    grid-column: 1;
+  }
+  .bestsellers-card__labels {
+    max-width: 180px;
   }
 }
 
@@ -1184,6 +1219,7 @@ body {
   }
   .main {
     padding-top: 102px;
+    padding-bottom: 40px;
   }
   .main-about {
     width: 100%;
@@ -1223,6 +1259,87 @@ body {
     min-width: 144px;
     min-height: 214px;
   }
+  .references__title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .references__button {
+    width: 117px;
+  }
+  .compilation-wrap {
+    margin-top: 15px;
+  }
+  .compilation-card {
+    padding: 0 23px 23px 23px;
+  }
+  .compilation-card__img {
+    margin-top: -27px;
+    margin-bottom: 10px;
+    height: 137px;
+  }
+  .compilation-card__info {
+    width: 100%;
+  }
+  .compilation-card__labels {
+    width: 100%;
+  }
+  .compilation-card__title {
+    font-size: 20px;
+    line-height: 24px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .compilation-card__genre {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 17px;
+  }
+  .compilation-card__price {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .compilation__else {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 14px;
+    text-transform: none;
+    margin-top: 21px;
+  }
+  .bestsellers {
+    padding-top: 55px;
+  }
+  .bestsellers-wrap {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 10px 0px 10px;
+  }
+  .bestsellers-card {
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .bestsellers-card__img {
+    width: 96px;
+    height: 142px;
+  }
+  .bestsellers-card__info {
+    margin-left: 10px;
+    max-width: 140px;
+    padding-bottom: 0;
+    padding-left: 5px;
+  }
+  .bestsellers__title {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+  .bestsellers__button {
+    width: 100px;
+  }
+  .bestsellers__books {
+    margin-top: 46px;
+    padding: 20px;
+  }
   .modal__form__bottom {
     margin-top: 10px;
     display: flex;
@@ -1248,4 +1365,3 @@ body {
     justify-content: space-between;
   }
 }
-/*# sourceMappingURL=style.css.map */

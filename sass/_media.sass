@@ -2,6 +2,13 @@
   .container
     padding: 0 20px
 
+  .compilation
+    &-card
+      &__labels
+      &__title
+        line-height: 22px
+      &__genre
+
 @media screen and ( max-width: 992px )
   .container
     width: 100%
@@ -32,7 +39,7 @@
       width: auto
   .references
     &-container
-      justify-content: space-around
+      justify-content: space-evenly
     &__title
       text-align: center
   .compilation
@@ -98,31 +105,55 @@
   .references
     &-container
       flex-direction: column
-
-
         
   .compilation
     &-wrap
       &__grid
-        grid-template-columns: repeat(2 minmax(min-content, 1fr))
-    &-card
-      &:nth-child(2n)
-        grid-column: 2
-      &:nth-child(4)
         display: flex
-      &:nth-child(n+5)
+        height: auto
+        max-height: none
+        padding-top: 60px
+        justify-content: center
+    &-card
+      padding-top: 0
+      max-width: 100%
+      max-height: none
+      flex-direction: column
+      align-items: center
+      &:nth-child(n+2)
         display: none
+      &__info
+        margin-left: 0
+        width: 70%
+        align-items: center
+      &__img
+        margin: 0
+        margin-top: -44px
+        margin-bottom: 20px
+        min-width: 96px
+        width: 35%
+        height: auto
+      &__labels
+        width: 100%
+        margin-bottom: 20px
+        align-items: center
+      &__title
+        text-align: center
   .bestsellers
     padding-top: 50px
     &-wrap
       max-width: none
       width: auto
       &__grid
-        grid-template-columns: 1fr 1fr
+        grid-template-columns: 1fr
         grid-column-gap: 10px
     &-card
-      &:nth-child(2n)
-        grid-column: 2
+      justify-content: center
+      min-width: 290px
+      width: 100%
+      grid-column: 1
+      &__labels
+        max-width: 180px
 
 
 
@@ -138,6 +169,7 @@
     line-height: 24px
   .main
     padding-top: 102px
+    padding-bottom: 40px
     &-wrap
     &-about
       width: 100%
@@ -169,6 +201,77 @@
       &__cover
         min-width: 144px
         min-height: 214px
+  .references
+    &__title
+      font-size: 28px
+      line-height: 36px
+    &__button
+      width: 117px
+  .compilation
+    &-wrap
+      margin-top: 15px
+    &-card
+      padding: 0 23px 23px 23px
+      &__img
+        margin-top: -27px
+        margin-bottom: 10px
+        height: 137px
+      &__info
+        width: 100%
+      &__labels
+        width: 100%
+      &__title
+        font-size: 20px
+        line-height: 24px
+        width: 100%
+        margin-bottom: 10px
+      &__genre
+        font-size: 14px
+        line-height: 20px
+        margin-bottom: 17px
+      &__price
+        font-size: 16px
+        line-height: 20px
+    &__else
+      font-size: 16px
+      line-height: 20px
+      padding: 14px
+      text-transform: none
+      margin-top: 21px
+  .bestsellers
+    padding-top: 55px
+    &-wrap
+      display: flex
+      flex-direction: column
+      padding: 30px 10px 0px 10px
+    &-card
+      padding: 0
+      display: flex
+      justify-content: flex-start
+      &__img
+        width: 96px
+        height: 142px
+      &__info
+        margin-left: 10px
+        max-width: 140px
+        padding-bottom: 0
+        padding-left: 5px
+    &__title
+      font-size: 16px
+      line-height: 24px
+      margin-bottom: 10px
+    &__button
+      width: 100px
+    &__books
+      margin-top: 46px
+      padding: 20px
+
+
+
+
+
+
+
   .modal
     &__form
       &__bottom
