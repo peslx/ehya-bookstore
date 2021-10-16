@@ -10,6 +10,10 @@
       &__genre
 
 @media screen and ( max-width: 992px )
+  .button
+    &:hover
+      box-shadow: none
+      transform: none
   .container
     width: 100%
     position: relative
@@ -17,6 +21,12 @@
   .section-title
     font-size: 42px
     line-height: 52px
+  .menu
+    &__link
+      &:hover
+        color: $dark
+        &::after
+          display: none
   .main
     &-about
       &__header
@@ -42,6 +52,14 @@
       justify-content: space-evenly
     &__title
       text-align: center
+    &__button
+      &:hover
+        box-shadow: none
+        transform: none
+    &__link
+      &:hover
+        &::after
+          display: none
   .compilation
     &-wrap
       &__grid
@@ -53,6 +71,13 @@
         grid-column: 1
       &:nth-child(n+4)
         display: none
+      &__like
+        &:hover
+          background-image: url('../img/like.svg')
+        &--clicked
+          background-image: url('../img/liked.svg')
+          &:hover
+            background-image: url('../img/liked.svg')
 
 
 
@@ -105,7 +130,7 @@
   .references
     &-container
       flex-direction: column
-        
+
   .compilation
     &-wrap
       &__grid
@@ -244,7 +269,14 @@
       display: flex
       flex-direction: column
       padding: 30px 10px 0px 10px
+      &__grid
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: center
     &-card
+      min-width: auto
+      width: auto
       padding: 0
       display: flex
       justify-content: flex-start
@@ -253,7 +285,7 @@
         height: 142px
       &__info
         margin-left: 10px
-        max-width: 140px
+        max-width: 130px
         padding-bottom: 0
         padding-left: 5px
     &__title
