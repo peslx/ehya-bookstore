@@ -64,8 +64,8 @@ $(document).ready(function () {
 
     // Navigation arrows
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".categories-button--next",
+      prevEl: ".categories-button--prev",
     },
   });
 });
