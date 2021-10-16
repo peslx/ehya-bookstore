@@ -1397,6 +1397,7 @@ body {
 
 @media screen and (max-height: 540px) {
   .modal__window {
+    top: 50%;
     height: 100vh;
     overflow-y: auto;
   }
