@@ -1,0 +1,56 @@
+.categories
+  background: Turquoise
+  &-wrap
+    padding: 60px 0 100px 0
+    background: SpringGreen
+    border-top: 1px solid #d8d8d8
+    border-top: 1px solid red
+  &-slider
+    background: HotPink
+    &__wrapper
+      background: tomato
+      display: flex
+      align-items: center
+      // justify-content: space-between
+  &-slide
+    max-width: 265px
+    max-height: 240px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: flex-start
+    border: 2px solid $light-transp
+    border-radius: 8px
+    // margin-left: 13px
+    // margin-right: 13px
+    &__img
+      width: 64px
+      height: 64px
+      object-fit: cover
+      margin: 40px
+    &__labels
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: flex-start
+      margin-bottom: 30px
+    &__title
+      font-family: 'Roboto', sans-serif
+      font-style: normal
+      font-weight: 500
+      font-size: 22px
+      line-height: 32px
+      text-align: center
+      letter-spacing: 0.2px
+      color: $dark
+      margin-bottom: 12px
+    &__about
+      font-family: 'Open Sans', sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 16px
+      line-height: 22px
+      text-align: center
+  &-button
+    &--prev
+    &--next

@@ -61,6 +61,8 @@ $(document).ready(function () {
     // Optional parameters
     direction: "horizontal",
     loop: false,
+    slidesPerView: 4,
+    spaceBetween: 26,
 
     // Navigation arrows
     navigation: {
