@@ -367,6 +367,8 @@ body {
 .container--mobile--visible {
   display: block;
   visibility: visible;
+  width: 100%;
+  min-height: 100%;
 }
 
 .container--mobile::before {
@@ -491,6 +493,7 @@ body {
   border: none;
   background: transparent;
   cursor: pointer;
+  user-select: none;
   background-image: url("../img/menu_open.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -1296,7 +1299,7 @@ body {
     margin-top: 15px;
   }
   .compilation-card {
-    padding: 0 23px 23px 23px;
+    padding: 0 13px 13px 23px;
   }
   .compilation-card__img {
     margin-top: -27px;
@@ -1329,21 +1332,25 @@ body {
     line-height: 20px;
     padding: 14px;
     text-transform: none;
-    margin-top: 21px;
+    margin-top: 31px;
   }
   .bestsellers {
+    padding: 0;
     padding-top: 55px;
   }
   .bestsellers-wrap {
     display: flex;
     flex-direction: column;
     padding: 30px 10px 0px 10px;
+    justify-content: center;
   }
   .bestsellers-wrap__grid {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-self: center;
     justify-content: center;
+    margin-right: 20px;
   }
   .bestsellers-card {
     min-width: auto;

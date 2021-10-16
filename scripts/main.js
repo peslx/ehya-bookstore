@@ -12,9 +12,19 @@ $(document).ready(function () {
     // console.log("Modal => opened");
   });
 
-  // Функция  закрыть мобильное меню кликом в пустоту
+  // Функция  закрыть модальное окно кликом в пустоту
   $(".modal__close, .modal__wrapper").click(function () {
     closeModal();
+  });
+
+  // Функция  закрыть мобильное меню кликом в пустоту
+  $(".container--mobile").click(function (e) {
+    // console.log(e.target.id);
+    if (e.target.id == "menu") {
+      return;
+    } else {
+      closeMobile();
+    }
   });
 
   // Функция  закрыть мобильное меню с клавиши Esc
@@ -45,6 +55,10 @@ $(document).ready(function () {
   $(".compilation-card__like").click(function () {
     $(this).toggleClass("compilation-card__like--clicked");
   });
+
+  // $(document).click((e) => {
+  //   console.log(e.target);
+  // });
 });
 
 // ("compilation-card__like--clicked");
