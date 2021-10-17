@@ -3,7 +3,6 @@
   &-wrap
     padding: 60px 0 100px 0
     border-top: 1px solid #d8d8d8
-    // border-top: 1px solid red
     // background: SpringGreen
   &-slider
     // background: HotPink
@@ -12,6 +11,8 @@
       align-items: center
       // background: tomato
   &-slide
+    min-width: 140px
+    min-height: 182px
     max-width: 265px
     max-height: 240px
     display: flex
@@ -21,9 +22,11 @@
     border: 2px solid $light-transp
     border-radius: 8px
     &__img
+      min-width: 36px
+      min-height: 36px
       width: 64px
       height: 64px
-      object-fit: cover
+      object-fit: 100%
       margin: 40px
     &__labels
       display: flex
@@ -69,6 +72,5 @@
       right: 0
       background-image: url('../img/genres/arr_next.svg')
       transform: translateX(50%)
-      margin-right: 10px
     &--disabled
       opacity: .5

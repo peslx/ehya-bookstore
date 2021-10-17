@@ -944,6 +944,8 @@ body {
 }
 
 .categories-slide {
+  min-width: 140px;
+  min-height: 182px;
   max-width: 265px;
   max-height: 240px;
   display: flex;
@@ -955,9 +957,11 @@ body {
 }
 
 .categories-slide__img {
+  min-width: 36px;
+  min-height: 36px;
   width: 64px;
   height: 64px;
-  object-fit: cover;
+  object-fit: 100%;
   margin: 40px;
 }
 
@@ -1015,7 +1019,6 @@ body {
   right: 0;
   background-image: url("../img/genres/arr_next.svg");
   transform: translateX(50%);
-  margin-right: 10px;
 }
 
 .categories-button--disabled {
@@ -1124,6 +1127,45 @@ body {
   }
   .compilation-card__title {
     line-height: 22px;
+  }
+  .categories-wrap {
+    min-width: 100%;
+  }
+  .categories-slider {
+    min-width: 100%;
+  }
+  .categories-slide__img {
+    width: 48px;
+    height: 48px;
+    margin: 20px 0;
+  }
+  .categories-slide__labels {
+    margin-bottom: 0;
+    justify-content: space-between;
+    height: 100%;
+    margin: 0;
+  }
+  .categories-slide__title {
+    font-size: 16px;
+    line-height: 20px;
+    height: 2em;
+  }
+  .categories-slide__about {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .categories-button {
+    top: 260px;
+    left: 0;
+    right: 0;
+    transform: none;
+    left: 50%;
+  }
+  .categories-button--prev {
+    transform: translateX(-76px);
+  }
+  .categories-button--next {
+    transform: translateX(20px);
   }
 }
 
