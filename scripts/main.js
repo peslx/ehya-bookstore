@@ -57,7 +57,7 @@ $(document).ready(function () {
   });
 
   // Активация слайдера в секции "Категории"
-  let categories = new Swiper(".categories-slider", {
+  let categoriesSlider = new Swiper(".categories-slider", {
     // Optional parameters
     direction: "horizontal",
     loop: false,
@@ -106,7 +106,24 @@ $(document).ready(function () {
     },
   });
 
+  // Активация слайдера в секции "Категории"
+  let unreleasedSlider = new Swiper(".unreleased-slider", {
+    // Optional parameters
+    direction: "horizontal",
+    loop: false,
+    slidesPerView: 5,
+    spaceBetween: 30,
+
+    // Navigation arrows
+    navigation: {
+      nextEl: ".unreleased-button--next",
+      prevEl: ".unreleased-button--prev",
+      disabledClass: "unreleased-button--disabled",
+    },
+  });
+
   $(window).resize(function () {
-    categories.update();
+    categoriesSlider.update();
+    unreleasedSlider.update();
   });
 });
