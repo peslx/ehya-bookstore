@@ -941,11 +941,10 @@ body {
 .categories-slider__wrapper {
   display: flex;
   align-items: center;
+  min-width: 0;
 }
 
 .categories-slide {
-  min-width: 140px;
-  min-height: 182px;
   max-width: 265px;
   max-height: 240px;
   display: flex;
@@ -962,7 +961,7 @@ body {
   width: 64px;
   height: 64px;
   object-fit: 100%;
-  margin: 40px;
+  margin: 36px 0;
 }
 
 .categories-slide__labels {
@@ -1128,43 +1127,17 @@ body {
   .compilation-card__title {
     line-height: 22px;
   }
-  .categories-wrap {
-    min-width: 100%;
-  }
-  .categories-slider {
-    min-width: 100%;
-  }
-  .categories-slide__img {
-    width: 48px;
-    height: 48px;
-    margin: 20px 0;
-  }
-  .categories-slide__labels {
-    margin-bottom: 0;
-    justify-content: space-between;
-    height: 100%;
-    margin: 0;
-  }
-  .categories-slide__title {
-    font-size: 16px;
-    line-height: 20px;
-    height: 2em;
-  }
-  .categories-slide__about {
-    font-size: 12px;
-    line-height: 20px;
-  }
-  .categories-button {
+  .compilation-button {
     top: 260px;
     left: 0;
     right: 0;
     transform: none;
     left: 50%;
   }
-  .categories-button--prev {
+  .compilation-button--prev {
     transform: translateX(-76px);
   }
-  .categories-button--next {
+  .compilation-button--next {
     transform: translateX(20px);
   }
 }
@@ -1365,6 +1338,12 @@ body {
   .bestsellers-card__labels {
     max-width: 180px;
   }
+  .categories-slider__wrapper {
+    height: 700px;
+  }
+  .categories-slide {
+    height: calc( (100% - 26px) / 2);
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -1511,6 +1490,9 @@ body {
   .bestsellers__books {
     margin-top: 46px;
     padding: 20px;
+  }
+  .categories-slide {
+    height: calc( (100% - 26px) / 2);
   }
   .modal__form__bottom {
     margin-top: 10px;

@@ -61,8 +61,42 @@ $(document).ready(function () {
     // Optional parameters
     direction: "horizontal",
     loop: false,
-    slidesPerView: 4,
-    spaceBetween: 26,
+
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        grid: {
+          fill: "column",
+          rows: 2,
+        },
+      },
+      // when window width is >= 576px
+      576: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        grid: {
+          fill: "column",
+          rows: 2,
+        },
+      },
+      // when window width is >= 768px
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 26,
+      },
+      // when window width is >= 992px
+      992: {
+        slidesPerView: 4,
+        spaceBetween: 10,
+      },
+      // when window width is >= 1200px
+      1200: {
+        slidesPerView: 4,
+        spaceBetween: 26,
+      },
+    },
 
     // Navigation arrows
     navigation: {
@@ -70,5 +104,9 @@ $(document).ready(function () {
       prevEl: ".categories-button--prev",
       disabledClass: "categories-button--disabled",
     },
+  });
+
+  $(window).resize(function () {
+    categories.update();
   });
 });
