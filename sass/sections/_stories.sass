@@ -1,0 +1,123 @@
+.stories
+  padding: 100px 0
+  &-container
+    display: flex
+    justify-content: center
+  &-wrap
+    max-width: 1000px
+  &-header
+    display: flex
+    justify-content: space-between
+    &__title
+
+    &__description
+      flex-basis: 41%
+      margin-top: 3px
+      padding-right: 30px
+      font-family: 'Open Sans', sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 32px
+  &-video
+    &__main
+      max-width: 1000px
+      height: 380px
+      position: relative
+      margin-bottom: 30px
+    &__placeholder
+      width: 100%
+      height: 100%
+      object-fit: cover
+    &__play
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      width: 100px
+      height: 100px
+      border-radius: 50%
+      background: $bgc
+      border: none
+      cursor: pointer
+      background-image: url('../img/stories/play.svg')
+      background-repeat: no-repeat
+      background-size: 40px
+      background-position: 58% 50%
+      transition: box-shadow .2s ease-in-out
+      &:hover
+        box-shadow: inset 0 0 5px $accent, 0 0 25px $accent, 0 0 25px $accent
+    &__other
+      display: flex
+      justify-content: space-between
+    &__item
+.video
+  &-card
+    max-width: 315px
+    display: flex
+    flex-direction: column
+    // background: tomato
+  &-frame
+    position: relative
+    &__placeholder
+      width: 100%
+      height: 200px
+      object-fit: cover
+    &__play
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      width: 60px
+      height: 60px
+      border-radius: 50%
+      background-color: transparent
+      border: none
+      cursor: pointer
+      background-image: url('../img/stories/play_s.svg')
+      background-repeat: no-repeat
+      background-size: auto
+      background-position: 58% 50%
+      transition: all .2s ease-in-out
+      opacity: .6
+      &:hover
+        opacity: 1
+        background: $accent_50
+        background-image: url('../img/stories/play_s.svg')
+        background-repeat: no-repeat
+        background-size: auto
+        background-position: 58% 50%
+  &-info
+    padding-top: 22px
+    display: flex
+    justify-content: space-between
+    &__label
+      display: flex
+      flex-direction: column
+    &__author
+      font-family: 'Roboto', sans-serif
+      font-style: normal
+      font-weight: 500
+      font-size: 22px
+      line-height: 32px
+      letter-spacing: 0.2px
+      color: $dark
+    &__book
+      font-family: 'Open Sans', sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 16px
+      line-height: 22px
+    &__favourites
+      width: 14px
+      height: 18px
+      align-self: flex-start
+      background-color: transparent
+      border: none
+      cursor: pointer
+      background-image: url('../img/stories/bookmark.svg')
+      background-repeat: no-repeat
+      background-size: auto
+      transition: transform .1s ease-in-out
+      &:hover
+        transform: scale(1.15)
