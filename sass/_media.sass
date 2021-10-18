@@ -38,7 +38,23 @@
       &--next
         transform: translateX(10px)
 
-
+  .partners
+    &-container
+      padding-top: 35px
+      padding-bottom: 32px
+      display: flex
+      flex-direction: column
+      justify-content: center
+    &__title
+    &-wrap
+      padding-top: 25px
+      display: flex
+      flex-flow: row wrap
+      justify-content: space-evenly
+    &__logo
+      padding-top: 0
+      padding-bottom: 0
+      margin: 20px
         
 
 @media screen and ( max-width: 992px )
@@ -233,7 +249,25 @@
         height: 30px
         background-size: 22px
 
+  .partners
+    &-container
+      padding-top: 35px
+      padding-bottom: 32px
+      display: flex
+      flex-direction: column
+      justify-content: center
+    &__title
+    &-wrap
+      padding-top: 25px
+      display: flex
+      flex-flow: row wrap
+      justify-content: space-evenly
+    &__logo
+      padding-top: 0
+      padding-bottom: 0
+      margin: 20px
 
+      
 @media screen and ( max-width: 768px )
 
   .section-heading
@@ -483,6 +517,30 @@
         width: 12px
         align-self: center
         background-size: 100%
+  .partners
+    &-container
+      padding-top: 35px
+      padding-bottom: 32px
+      display: flex
+      flex-direction: column
+      justify-content: center
+    &__title
+    &-wrap
+      padding-top: 25px
+      display: flex
+      flex-flow: row wrap
+      justify-content: space-evenly
+    &__logo
+      padding-top: 0
+      padding-bottom: 0
+      margin: 20px
+      &:nth-child(2n)
+        
+      &:nth-child(n+9)
+        display: none
+
+
+
 
 @media screen and ( max-width: 576px )
   
@@ -694,7 +752,7 @@
         transform: translateX(10px)
 
   .stories
-    padding: 40px 0 98px 0
+    padding: 40px 0 39px 0
     &-container
       padding: 0 10px
       width: 100%
@@ -730,6 +788,32 @@
         max-height: 140px
         width: 100%
 
+  .partners
+    &-container
+      padding-top: 35px
+      padding-bottom: 32px
+      display: flex
+      flex-direction: column
+      justify-content: center
+    &__title
+    &-wrap
+      padding-top: 25px
+      display: grid
+      grid-template-columns: 40% 40%
+      grid-row-gap: 25px
+      grid-column-gap: 20px
+      justify-content: center
+      justify-items: center
+    &__logo
+      padding-top: 0
+      padding-bottom: 0
+      align-self: center
+      grid-column: 1
+      &:nth-child(2n)
+        grid-column: 2
+      &:nth-child(n+7)
+        display: none
+        
 
 
 
