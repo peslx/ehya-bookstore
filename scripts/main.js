@@ -115,9 +115,34 @@ $(document).ready(function () {
     // Optional parameters
     direction: "horizontal",
     loop: false,
-    slidesPerView: 5,
-    spaceBetween: 30,
 
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 30,
+      },
+      // when window width is >= 576px
+      576: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+      // when window width is >= 768px
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+      },
+      // when window width is >= 992px
+      992: {
+        // slidesPerView: 4,
+        // spaceBetween: 30,
+      },
+      // when window width is >= 1200px
+      1200: {
+        slidesPerView: 5,
+        spaceBetween: 30,
+      },
+    },
     // Navigation arrows
     navigation: {
       nextEl: ".unreleased-button--next",
