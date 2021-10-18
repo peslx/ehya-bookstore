@@ -2315,6 +2315,7 @@ body {
   }
   .unreleased-wrap {
     position: static;
+    width: 100%;
   }
   .unreleased__title {
     font-size: 28px;
@@ -2323,7 +2324,19 @@ body {
     margin-bottom: 40px;
   }
   .unreleased-slider {
-    width: 205px;
+    display: flex;
+    align-items: center;
+    min-width: 230px;
+    max-width: 230px;
+    padding-left: 15px;
+    margin: auto;
+  }
+  .unreleased-slider__wrapper {
+    width: 100%;
+  }
+  .unreleased-slider__slide {
+    max-width: 205px;
+    max-height: 300px;
   }
   .unreleased-slider__img {
     width: 100%;
