@@ -66,7 +66,7 @@ $(document).ready(function () {
       // when window width is >= 320px
       320: {
         slidesPerView: 2,
-        spaceBetween: 30,
+        spaceBetween: 10,
         grid: {
           fill: "column",
           rows: 2,
@@ -83,8 +83,12 @@ $(document).ready(function () {
       },
       // when window width is >= 768px
       768: {
-        slidesPerView: 3,
-        spaceBetween: 26,
+        slidesPerView: 4,
+        spaceBetween: 16,
+        grid: {
+          fill: "row",
+          rows: 1,
+        },
       },
       // when window width is >= 992px
       992: {

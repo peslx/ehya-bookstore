@@ -8,9 +8,6 @@
       &__title
         line-height: 22px
       &__genre
-
-
-  
     &-button
       top: 260px
       left: 0
@@ -21,6 +18,27 @@
         transform: translateX(-76px)
       &--next
         transform: translateX(20px)
+  .categories
+    &-wrap
+    &-slider   
+      &__wrapper
+    &-slide
+      &__img
+      &__title
+      &__about
+    &-button
+      width: 55px
+      height: 55px
+      background-size: 16px
+      top: auto
+      bottom: 28px
+      left: 50%
+      &--prev
+        transform: translateX( -65px)
+      &--next
+        transform: translateX(10px)
+
+
         
 
 @media screen and ( max-width: 992px )
@@ -91,40 +109,34 @@
           background-image: url('../img/liked.svg')
           &:hover
             background-image: url('../img/liked.svg')
-  // .categories
-  //   margin: 0 auto
-  //   width: 100%
-  //   display: flex
-  //   justify-content: center
-  //   &-wrap
-  //     margin-left: 10%
-  //   &-slider
-  //   &-slide
-  //     background: tomato
-  //     &__img
-  //       width: 48px
-  //       height: 48px
-  //       margin: 20px 0
-  //     &__labels
-  //       margin-bottom: 0
-  //       justify-content: space-between
-  //       height: 100%
-  //       margin: 0
-  //     &__title
-  //       font-size: 16px
-  //       line-height: 20px
-  //       height: 2em        
-  //     &__about
-  //       font-size: 12px
-  //       line-height: 20px
-  //   &-button
-  //     top: 280px
-  //     left: 50%
-  //     transform: translateX(-50%)
-  //     &--prev
-  //       transform: translateX(-70px)
-  //     &--next
-  //       transform: translateX(14px)
+  .categories
+    &-wrap
+    &-slider   
+      &__wrapper
+    &-slide
+      width: 200px
+      &__img
+        width: 40px
+        height: 40px
+        margin: 15px 0
+      &__title
+        font-size: 16px
+        line-height: 22px
+        margin-bottom: 10px
+      &__about
+        font-size: 14px
+        line-height: 20px
+    &-button
+      width: 55px
+      height: 55px
+      background-size: 16px
+      top: auto
+      bottom: 28px
+      left: 50%
+      &--prev
+        transform: translateX( -65px)
+      &--next
+        transform: translateX(10px)
 
 
 
@@ -230,11 +242,22 @@
     &-wrap
     &-slider   
       &__wrapper
-        height: 700px
+        height: 600px
     &-slide
       height: calc( (100% - 26px) / 2 )
-
-      // background: tomato
+      display: flex
+      justify-content: center
+    &-button
+      width: 55px
+      height: 55px
+      background-size: 16px
+      top: auto
+      bottom: 58px
+      left: 50%
+      &--prev
+        transform: translateX( -65px)
+      &--next
+        transform: translateX(10px)
 
 
 @media screen and ( max-width: 576px )
@@ -282,6 +305,7 @@
         min-width: 144px
         min-height: 214px
   .references
+    padding-bottom: 54px
     &__title
       font-size: 28px
       line-height: 36px
@@ -358,18 +382,48 @@
       padding: 20px
 
   .categories
+    margin: 0 auto
+    width: 100%
+    display: flex
+    justify-content: center
+    padding: 0
     &-wrap
-      
+      padding-top: 60px
+      padding-bottom: 111px
     &-slider
-      
       &__wrapper
-        
+        height: 400px
     &-slide
-      height: calc( (100% - 26px) / 2 )
-
-
-
-
+      &__img
+        width: 32px
+        height: 32px
+        margin: 12px 0 18px 0
+      &__labels
+        margin-bottom: 0
+        justify-content: flex-start
+        height: 100%
+        margin: 0
+      &__title
+        padding: 0 5px
+        font-size: 14px
+        line-height: 18px
+        font-weight: bold
+        height: 2em        
+      &__about
+        margin-top: 8px
+        font-size: 12px
+        line-height: 20px
+    &-button
+      width: 45px
+      height: 45px
+      background-size: 13px
+      top: auto
+      bottom: 58px
+      left: 50%
+      &--prev
+        transform: translateX( -53px)
+      &--next
+        transform: translateX(8px)
 
   .modal
     &__form
