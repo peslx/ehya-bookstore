@@ -357,7 +357,6 @@ body {
   width: 100%;
   margin: auto;
   position: relative;
-  overflow: hidden;
 }
 
 .container--mobile {
@@ -1004,7 +1003,7 @@ body {
   background-color: #ffffff;
   position: absolute;
   top: 152px;
-  z-index: 100;
+  z-index: 20;
   background-repeat: no-repeat;
   background-size: 18px;
   background-position: center;
