@@ -223,6 +223,8 @@
       bottom: 48px
       right: auto
       left: 50%
+      &:hover
+        border-color: $bgc
       &--prev
         transform: translateX(-58px)
       &--next
@@ -249,6 +251,9 @@
         max-height: 310px
         position: relative
         margin-bottom: 20px
+      &__play
+        &:hover
+          box-shadow: none
 
       &__other
         max-width: 100%
@@ -261,7 +266,6 @@
         flex-direction: column
         &:nth-child(n+2)
           margin-left: 20px
-
   .video
     &-card
       min-width: 0
@@ -270,12 +274,23 @@
       max-width: none
       &__placeholder
         min-width: 140px
-    
         width: 100%
       &__play
         width: 30px
         height: 30px
         background-size: 22px
+        opacity: 1
+        &:hover
+          background: transparent
+          background-image: url('../img/stories/play_s.svg')
+          background-repeat: no-repeat
+          background-size: 22px
+          background-position: 58% 50%
+    &-info
+      &__favourites
+        &:hover
+          transform: none
+
 
   .partners
     &-container
@@ -315,7 +330,6 @@
         flex-direction: column
         &:nth-child(3)
           display: none
-          
       &__img
         width: 100%
       &__info
@@ -323,6 +337,8 @@
       &__date
       &__title
       &__link
+        &::after
+          display: none
 
   .newsletter
     &-container
@@ -341,13 +357,6 @@
     &__button
 
   .newsletter
-
-    &-container
-
-    &__title
-
-    &__form
-
     &__block
       display: flex
       justify-content: space-between
@@ -365,6 +374,37 @@
       min-width: 0
       width: auto
     &__button
+      &:hover
+        color: $bgc
+        box-shadow: none
+
+  .footer
+    &-container
+    &-content
+      &__main
+      &__logo
+      &__text
+      &__socials
+      &__item
+      &__subtitle
+      &__links
+      &__link
+        &:hover
+          color: $dark
+          &::after
+            display: none
+    &-bottom
+      &__img
+      &__copyright
+  .socials
+    &__link
+    &__img
+      &:hover
+        box-shadow: none
+        transform: translateY(0)
+
+
+
 
 
 @media screen and ( max-width: 768px )
