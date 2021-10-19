@@ -178,4 +178,26 @@ $(document).ready(function () {
   });
 
   $(".phone").mask("+7 (999) 999-99-99");
+
+  // Плавная прокрутка
+  $(function () {
+    $(".menu__link[href=#references]").on("click", function (e) {
+      $("html,body")
+        .stop()
+        .animate({ scrollTop: $("#references").offset().top }, 1000);
+      e.preventDefault();
+    });
+    $(".menu__link[href=#unreleased]").on("click", function (e) {
+      $("html,body")
+        .stop()
+        .animate({ scrollTop: $("#unreleased").offset().top }, 1000);
+      e.preventDefault();
+    });
+    $(".menu__link[href=#blog]").on("click", function (e) {
+      $("html,body")
+        .stop()
+        .animate({ scrollTop: $("#blog").offset().top }, 1000);
+      e.preventDefault();
+    });
+  });
 });
