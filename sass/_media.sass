@@ -340,8 +340,33 @@
     &__icon
     &__button
 
+  .newsletter
 
-      
+    &-container
+
+    &__title
+
+    &__form
+
+    &__block
+      display: flex
+      justify-content: space-between
+      align-items: center
+    &__icon
+      width: 22px
+      height: 38px
+      margin-left: 10px
+      margin-right: 0px
+      background-size: 100%
+      background-position: center
+      margin-right: 5px
+    &__input
+      padding: 8px 20px 8px 8px
+      min-width: 0
+      width: auto
+    &__button
+
+
 @media screen and ( max-width: 768px )
 
   .section-heading
@@ -632,12 +657,24 @@
       &__link
 
   .newsletter
-    &-container
-    &__title
-    &__form
-    &__input
+    &__block
+      display: flex
+      justify-content: space-between
+      align-items: center
     &__icon
+      width: 22px
+      height: 38px
+      margin-left: 10px
+      margin-right: 0px
+      background-size: 100%
+      background-position: center
+      margin-right: 5px
+    &__input
+      padding: 8px 20px 8px 8px
+      min-width: 0
+      width: auto
     &__button
+
 
 
 @media screen and ( max-width: 576px )
@@ -933,7 +970,7 @@
         font-size: 28px
         line-height: 36px
       &__img
-        margin-top: 45px
+        margin-top: 50px
         width: 100%
         max-height: 120px
         object-fit: cover
@@ -996,12 +1033,45 @@
 
 
   .newsletter
+    background-image: url('../img/newsletter_bg.png')
     &-container
+      background-image: none
+      border-radius: 0 
+      padding: 27px 4px
+      height: auto
     &__title
+      font-size: 28px
+      line-height: 36px
+      text-align: left
+      width: 220px
+      align-self: flex-start
     &__form
-    &__input
+      width: 100%
+      flex-direction: column
+      padding: 10px 8px 8px 8px
+      margin-top: 30px
+    &__block
+      display: flex
+      justify-content: flex-start
+      margin-bottom: 7px
     &__icon
+      width: 22px
+      height: 38px
+      margin-left: 10px
+      margin-right: 0px
+      background-size: 100%
+      background-position: center
+      margin-right: 5px
+    &__input
+      padding: 8px 20px 8px 8px
+      min-width: 0
+      width: 100%
     &__button
+      flex-basis: 100%
+      font-size: 16px
+      line-height: 22px
+      padding: 10px
+      
 
 
 
