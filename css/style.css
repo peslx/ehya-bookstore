@@ -3004,13 +3004,16 @@ body {
   .footer-content {
     justify-content: space-between;
   }
+  .footer-content__logo {
+    margin-bottom: 8px;
+  }
   .footer-content__main {
     margin-right: 0;
   }
   .footer-content__text {
     margin-top: 0;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
   }
   .footer-content__item {
     min-width: 110px;
