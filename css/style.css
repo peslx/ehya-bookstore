@@ -1564,6 +1564,8 @@ body {
 
 .footer-content__text {
   margin-bottom: 32px;
+  font-size: 15px;
+  line-height: 28px;
 }
 
 .footer-content__item {
