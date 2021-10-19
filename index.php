@@ -39,11 +39,7 @@
       <div class="container">
         <div class="navbar-wrap">
           <a href="#" class="logo">
-            <img
-              src="img/logo.svg"
-              alt="Logo: Ehya-Bookstore"
-              class="logo__img"
-            />
+            <img src="img/logo.svg" alt="Logo: Ehya-Bookstore" class="logo__img" />
           </a>
           <!-- /.logo -->
           <div class="menu">
@@ -105,11 +101,7 @@
           <!-- /.main-about -->
           <div class="main-book">
             <div class="main-book__cover">
-              <img
-                src="img/books/the_psychology_of_graphic_design_pricing.png"
-                alt="Book: The psychology of graphic design pricing"
-                class="main-book__img"
-              />
+              <img src="img/books/the_psychology_of_graphic_design_pricing.png" alt="Book: The psychology of graphic design pricing" class="main-book__img" />
             </div>
             <!-- /.main-book__cover -->
           </div>
