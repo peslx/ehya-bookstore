@@ -380,12 +380,28 @@
 
   .footer
     &-container
+      padding: 0
     &-content
+      padding: 48px 0 64px 0
+      margin-bottom: 0
+      flex-flow: row wrap
+      justify-content: space-evenly
       &__main
+        display: flex
+        flex-direction: column
+        align-items: center
+        flex-basis: 100%
+        max-width: 100%
+        width: 100%
+        order: 2
+        margin-right: 0
       &__logo
       &__text
       &__socials
       &__item
+        margin-left: 0
+        margin-right: 20px
+        width: 100px
       &__subtitle
       &__links
       &__link
@@ -394,6 +410,8 @@
           &::after
             display: none
     &-bottom
+      padding: 0
+      margin-bottom: 30px
       &__img
       &__copyright
   .socials
@@ -715,6 +733,27 @@
       width: auto
     &__button
 
+  .footer
+    &-container
+    &-content
+      &__main
+      &__logo
+      &__text
+      &__socials
+      &__item
+      &__subtitle
+        font-size: 16px
+        line-height: 22px
+      &__links
+      &__link
+        font-size: 14px
+        line-height: 20px
+    &-bottom
+      &__img
+      &__copyright
+  .socials
+    &__link
+    &__img
 
 
 @media screen and ( max-width: 576px )
@@ -908,11 +947,9 @@
         margin-left: auto
         margin-right: auto
         width: 100%
-
       &__slide
         max-width: 205px
         max-height: 300px
-        
       &__img
         width: 100%
     &-button
@@ -992,8 +1029,6 @@
       &:nth-child(n+7)
         display: none
         
-
-
   .blog
     &-container
       flex-direction: column
@@ -1014,7 +1049,6 @@
         width: 100%
         max-height: 120px
         object-fit: cover
-        
       &__info
         padding: 0 0px
         display: flex
@@ -1054,7 +1088,6 @@
         margin: 0
         padding-top: 3px
         min-width: 150px
-        
       &__date
         font-size: 10px
         line-height: 20px
@@ -1068,10 +1101,6 @@
         font-size: 10px
         line-height: 20px
 
-
-
-
-
   .newsletter
     background-image: url('../img/newsletter_bg.png')
     &-container
@@ -1083,7 +1112,7 @@
       font-size: 28px
       line-height: 36px
       text-align: left
-      width: 220px
+      width: 80%
       align-self: flex-start
     &__form
       width: 100%
@@ -1112,8 +1141,34 @@
       line-height: 22px
       padding: 10px
       
+  .footer
+    &-container
+    &-content
+      justify-content: space-between
+      &__main
+        margin-right: 0
+      &__logo
+      &__text
+        margin-top: 0
+        text-align: center
+        margin-bottom: 20px
+      &__socials
+      &__item
+        min-width: 110px
+        width: 40%
+        margin-bottom: 28px
+        justify-content: flex-start
+      &__subtitle
+        margin-bottom: 20px
+      &__links
+      &__link
+        margin-bottom: 15px
+    &-bottom
+      display: none
 
-
+  .socials
+    &__link
+    &__img
 
   .modal
     &__form
