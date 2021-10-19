@@ -419,10 +419,6 @@
         box-shadow: none
         transform: translateY(0)
 
-
-
-
-
 @media screen and ( max-width: 768px )
 
   .section-heading
@@ -1194,3 +1190,10 @@
         display: flex
         flex-direction: column-reverse
         justify-content: space-between
+  
+@media screen and ( min-width: 993px )
+  .partners
+    &__link
+      transition: all .2s ease-in-out
+      &:hover
+        transform: scale(1.1)
