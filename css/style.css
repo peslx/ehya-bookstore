@@ -1046,7 +1046,7 @@ body {
 }
 
 .categories-button--disabled {
-  opacity: .5;
+  opacity: 0;
 }
 
 .unreleased {
@@ -1693,7 +1693,7 @@ body {
   min-width: 316px;
   max-width: 426px;
   width: 100%;
-  top: 35%;
+  top: 50%;
   left: 50%;
   border: 2px solid #1565D8;
   border-radius: 8px;
@@ -3063,5 +3063,10 @@ body {
   }
   .partners__link:hover {
     transform: scale(1.1);
+  }
+  .demo {
+    max-width: none;
+    padding-left: 55px;
+    padding-right: 55px;
   }
 }
