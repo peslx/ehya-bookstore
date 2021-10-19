@@ -1802,6 +1802,9 @@ body {
   .bestsellers-card:nth-child(3) {
     display: none;
   }
+  .categories-slide__title {
+    letter-spacing: -0.6px;
+  }
   .categories-button {
     width: 55px;
     height: 55px;
