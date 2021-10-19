@@ -3,7 +3,17 @@
     margin: 0 auto
     padding: 0 20px
   .compilation
+    &-wrap
+      &__grid
+        grid-template-columns: 300px 300px
+        grid-row-gap: 10px
+        grid-column-gap: 10px
     &-card
+      max-width: 25%
+      &__img
+        min-width: 120px
+        height: 180px
+        
       &__labels
       &__title
         line-height: 22px
@@ -57,6 +67,9 @@
   .blog
     &-main
       width: auto
+      max-width: 45%
+      &__img
+        max-width: 400px
     &-articles
       &__item
         min-width: 514px

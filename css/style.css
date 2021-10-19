@@ -658,7 +658,7 @@ body {
 }
 
 .main-button {
-  min-width: 215px;
+  min-width: 211px;
   max-width: 215px;
   padding: 16px 10px;
   text-transform: uppercase;
@@ -1768,6 +1768,18 @@ body {
     margin: 0 auto;
     padding: 0 20px;
   }
+  .compilation-wrap__grid {
+    grid-template-columns: 300px 300px;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+  }
+  .compilation-card {
+    max-width: 25%;
+  }
+  .compilation-card__img {
+    min-width: 120px;
+    height: 180px;
+  }
   .compilation-card__title {
     line-height: 22px;
   }
@@ -1819,6 +1831,10 @@ body {
   }
   .blog-main {
     width: auto;
+    max-width: 45%;
+  }
+  .blog-main__img {
+    max-width: 400px;
   }
   .blog-articles__item {
     min-width: 514px;
