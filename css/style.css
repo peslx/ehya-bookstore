@@ -2639,6 +2639,7 @@ body {
     justify-items: center;
   }
   .partners__logo {
+    margin: 0;
     padding-top: 0;
     padding-bottom: 0;
     align-self: center;
