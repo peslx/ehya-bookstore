@@ -1853,7 +1853,6 @@ body {
   }
   .categories-slider__wrapper {
     max-width: 100%;
-    overflow: hidden;
     position: static;
   }
   .categories-slide {
@@ -2548,12 +2547,15 @@ body {
   .unreleased-slider {
     display: flex;
     align-items: center;
-    min-width: 230px;
-    max-width: 230px;
-    padding-left: 15px;
-    margin: auto;
+    max-width: 205px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .unreleased-slider__wrapper {
+    min-width: 200px;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
     width: 100%;
   }
   .unreleased-slider__slide {
@@ -2674,3 +2676,4 @@ body {
     justify-content: space-between;
   }
 }
+/*# sourceMappingURL=style.css.map */

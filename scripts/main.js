@@ -120,7 +120,7 @@ $(document).ready(function () {
       // when window width is >= 320px
       320: {
         slidesPerView: 1,
-        spaceBetween: 30,
+        spaceBetween: 20,
       },
       // when window width is >= 576px
       576: {
