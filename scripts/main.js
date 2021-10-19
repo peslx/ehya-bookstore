@@ -1,6 +1,5 @@
 $(document).ready(function () {
   // Кнопка прокрутки
-  // $(".scroll-top").fadeOut(); //скрываем кнопку
   $(window).scroll(function () {
     if ($(this).scrollTop() > 150) {
       // при прокрутке страницы на 150 пикселей вниз
