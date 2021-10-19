@@ -1796,6 +1796,12 @@ body {
   .compilation-button--next {
     transform: translateX(20px);
   }
+  .bestsellers-wrap {
+    height: 776px;
+  }
+  .bestsellers-card:nth-child(3) {
+    display: none;
+  }
   .categories-button {
     width: 55px;
     height: 55px;
