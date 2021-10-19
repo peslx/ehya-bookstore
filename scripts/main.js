@@ -182,6 +182,7 @@ $(document).ready(function () {
 
         phone: {
           required: "Номер телефона необходим для связи с Вами",
+          minlength: "Пожалуйста, введите корректный номер",
         },
 
         email: {
