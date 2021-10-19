@@ -18,6 +18,7 @@
     />
     <!-- Стили -->
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <!-- Картинки -->
     <link rel="prefetch prerender" href="img/like_hov.svg" />
@@ -27,6 +28,9 @@
     <!-- Скрипты -->
     <script src="https://code.jquery.com/jquery-1.11.3.min.js" defer></script>
     <script src="scripts/swiper-bundle.min.js" defer></script>
+    <script src="scripts/jquery.fancybox.min.js" defer></script>
+    <script src="scripts/jquery.mask.min.js" defer></script>
+    <script src="scripts/jquery.validate.min.js" defer></script>
     <script src="scripts/main.js" defer></script>
     <!-- ### -->
   </head>
@@ -35,7 +39,11 @@
       <div class="container">
         <div class="navbar-wrap">
           <a href="#" class="logo">
-            <img src="img/logo.svg" alt="Logo: Ehya-Bookstore" class="logo__img" />
+            <img
+              src="img/logo.svg"
+              alt="Logo: Ehya-Bookstore"
+              class="logo__img"
+            />
           </a>
           <!-- /.logo -->
           <div class="menu">
@@ -981,7 +989,7 @@
           <h3 class="newsletter__title">
             Будь первым, кто&nbsp;узнает о&nbsp;наших акциях
           </h3>
-          <form action="#" method="POST" class="newsletter__form">
+          <form action="#" method="POST" class="newsletter__form validate-form">
             <div class="newsletter__block">
               <label class="newsletter__icon" for="newsletter"> </label>
               <input
@@ -1154,7 +1162,7 @@
         </button>
         <div class="modal__contact-form form">
           <h3 class="modal__title">Оформить заказ</h3>
-          <form action="#" method="POST" class="modal__form">
+          <form action="#" method="POST" class="modal__form validate-form">
             <input
               type="text"
               class="input modal__input"

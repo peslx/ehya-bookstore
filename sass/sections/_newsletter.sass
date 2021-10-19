@@ -30,9 +30,11 @@
     justify-content: space-between
     
   &__block
-      display: flex
-      justify-content: space-between
-      align-items: center
+    display: flex
+    justify-content: space-between
+    align-items: center
+    position: relative
+
   &__icon
     width: 20px
     height: 100%
@@ -79,3 +81,12 @@
     &:hover
       color: $dark
       box-shadow: inset 0 0 2px $dark, 0 0 2px $dark, 0 0 3px $dark
+
+#newsletter-error
+  color: red
+  position: absolute
+  width: fit-content
+  font-size: 12px
+  font-weight: bold
+  top: 35px
+  left: 18px

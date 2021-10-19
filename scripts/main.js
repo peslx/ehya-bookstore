@@ -155,4 +155,27 @@ $(document).ready(function () {
     categoriesSlider.update();
     unreleasedSlider.update();
   });
+
+  $(".validate-form").each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "Пожалуйста, укажите Ваше имя",
+          minlength: "Минимальная длина имени - 2 символа",
+        },
+
+        phone: {
+          required: "Номер телефона необходим для связи с Вами",
+        },
+
+        email: {
+          required: "Пожалуйста, укажите E-mail",
+          email: "Введите корректный адрес",
+        },
+      },
+    });
+  });
+
+  $(".phone").mask("+7 (999) 999-99-99");
 });
