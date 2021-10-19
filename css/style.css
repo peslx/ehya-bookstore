@@ -472,6 +472,24 @@ body {
   border-bottom: 1px solid red;
 }
 
+.scroll-top {
+  width: 38px;
+  height: 38px;
+  border: 2px solid #1565D8;
+  background: #FAAD13;
+  border-radius: 8px;
+  background-image: url("../img/scroll.svg");
+  background-repeat: no-repeat;
+  background-size: 22px;
+  background-position: center;
+  cursor: pointer;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  z-index: 300;
+  display: none;
+}
+
 .navbar {
   padding: 36px 20px;
   width: 100%;
@@ -2160,6 +2178,10 @@ body {
     box-shadow: none;
     transform: translateY(0);
   }
+  .scroll-top {
+    right: 40px;
+    bottom: 40px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -2505,6 +2527,11 @@ body {
   .footer-content__link {
     font-size: 14px;
     line-height: 20px;
+  }
+  .scroll-top {
+    right: 35px;
+    bottom: 35px;
+    background-size: 18px;
   }
 }
 

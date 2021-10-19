@@ -1,4 +1,20 @@
 $(document).ready(function () {
+  // Кнопка прокрутки
+  // $(".scroll-top").fadeOut(); //скрываем кнопку
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 150) {
+      // при прокрутке страницы на 150 пикселей вниз
+      $(".scroll-top").fadeIn(); // отображаем кнопку
+    } else {
+      $(".scroll-top").fadeOut(); // в противном случае скрываем
+    }
+  });
+
+  $(".scroll-top").click(function (e) {
+    $("html, body").animate({ scrollTop: 0 }, 800);
+    e.preventDefault();
+  });
+
   // Функция  открыть мобильное меню кликом по кнопке "бургер"
   $(".navbar-button").click(function () {
     $(".navbar-button").toggleClass("navbar-button--active");
